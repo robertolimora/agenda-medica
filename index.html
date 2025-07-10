@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Médica – Clínica Santa Maria</title>
+  <meta name="description" content="Sistema de agendamento de consultas da Clínica Santa Maria. Agende, edite e cancele com facilidade.">
+  <meta property="og:title" content="Agenda Médica – Clínica Santa Maria">
+  <meta property="og:description" content="Gerencie suas consultas em poucos cliques.">
+  <meta property="og:image" content="icon-192.png">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Agenda Médica</h1>
+    <button id="reload">🔄 Recarregar</button>
+  </header>
+  <main id="calendar-container">
+    <div id="loading">Carregando...</div>
+    <div id="calendar"></div>
+  </main>
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display:none;">
+    <div id="modalContent">
+      <h2 id="modalTitle">Detalhes do Compromisso</h2>
+      <button id="closeModal" aria-label="Fechar">❌</button}
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+</body>
+</html>
